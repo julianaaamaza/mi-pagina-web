@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  background-color: #111;
+  color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+}
+/* al pasarle el mouse por los links del menú(quienes somos,etc), se ponen rojos */
+nav a:hover {
+  color: #ff1a1a;
+}
+
+
+/* Estilo para decorar los párrafos: tipografía, color claro y una sombra para que resalte */
+p{
+  font-family: 'poppins';
+  color: #c5c1c1;
+  text-shadow: 2px 2px 4px black;
+
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000; /* Ajusta según tu diseño */
+  z-index: 1000;
+}
+
+
+header {
+  background-color: #000;
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 600;
+}
+------------
+.tabla-terror {
+  border: 2px solid red; /* Borde rojo para toda la tabla */
+  border-collapse: collapse; /* Une los bordes de celdas */
+  width: 100%;
+  text-align: center;
+}
+
+/* Bordes y estilo para celdas de la tabla */
+.tabla-terror th,
+.tabla-terror td {
+  border: 4px solid darkred; /* Borde interno para cada celda */
+  padding: 10px;
+  color: white;
+}
+
+/* Estilos para los títulos (h), con fuente creepster que es mas "terrorifica", su sombra y color rojo oscuro */
+h1 {
+  font-family: 'Creepster', cursive;
+  color: #B30000;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  margin-left: 0.5%;
+  font-size: 4rem;
+}
+
+h2{
+  font-family: 'Creepster', cursive;
+  color: #B30000;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  font-size: 42px; 
+}
+
+h3{
+  font-family: 'Creepster', cursive;
+  color: #B30000;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  font-size: 25px;
+  
+}
+
+h4{
+  font-family: 'Creepster', cursive;
+  color: #B30000;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  font-size: 42px; 
+}
+
+h5{
+  font-family: 'Creepster', cursive;
+  color: #B30000;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  font-size: 42px; 
+}
+
+h6{
+  font-family: 'Creepster', cursive;
+  color: #B30000;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  font-size: 42px; 
+}
+
+
+.seccion {
+  padding: 2rem;
+  background-color: #111;
+  position: relative;
+}
+/* Fondo decorativo arriba o abajo con imagen*/
+.fondo-arriba, .fondo-abajo {
+  background-image: url('images/alexandre-dinaut-auTWPlehe_I-unsplash\ \(1\).jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+}
+/*padding(espacio) dentro de las secciones*/
+.contenido {
+  padding: 2rem 1rem;
+}
+
+/* en esta parte las películas destacadas en una grilla(grid) adaptable que ordena las columnas según el tamaño de la pantalla */
+.peliculas-destacadas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+/* decoracion para cada tarjeta de en donde esta la película */
+.pelicula {
+  background-color: #1a1a1a;
+  border-left: 5px solid #B30000;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(179, 0, 0, 0.3);
+}
+
+.pelicula img {
+  width: 99%;
+  height: 25%;
+  border-radius: 30px;
+  margin-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.5rem;
+  border: 1px solid #555;
+}
+/* se organixan los formularios en columnas centradas */
+form {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+}
+/* este es el boton rojo con esquinas redondeadas y el enviar en color blanco */
+button {
+  background-color: #B30000;
+  color: rgb(255, 253, 253);
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #000;
+
+}
+
+
+
+/* */
+
+
+/* Contenedor principal del formulario */
+#form-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* esto distribuye en dos columnas para organizar mejor el formulario*/
+.form-columns {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Cada columna vertical */
+.columna {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+/* Parte de abajo del formulario (por ejemplo el checkbox) */
+.form-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Estilos a los inputs y etiquetas */
+#form-contacto label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #fff; /* o el color de tu sitio */
+}
+
+#form-contacto input,
+#form-contacto select {
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  border: none;
+  margin-top: 0.20rem;
+}
+/* Centra todas las imágenes y ajusta su tamaño aunque igual se puede hacer desde el html ajustar el tamaño*/
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* para que no se salga del contenedor */
+  height: 50%;
+}
+
+
